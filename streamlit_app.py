@@ -9,7 +9,7 @@ my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.co
 my_fruit_list = my_fruit_list.set_index('Fruit')
 
 
-streamlit.title('View our Fruitlist - Add your Favorites!')
+streamlit.title('My Parents Healthy Diner Menu!')
 
 streamlit.header('Breakfast Menu')
 streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
@@ -48,7 +48,7 @@ except URLError as e:
 #streamlit.text(fruityvice_response.json())
 
 
-streamlit.header("The fruit load list contains:")
+streamlit.header("View our Fruitlist - Add your Favorites")
 
 def get_fruit_load_list():
     with my_cnx.cursor() as my_cur:
